@@ -18,6 +18,8 @@ public class Tecnocinetico {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        // ¡Y AHORA LA GENERACIÓN DE MUNDO!
+        ModWorldGen.register(modEventBus);
 
         LOGGER.info("¡VICTORIA! El mod Tecnocinetico se está cargando.");
     }

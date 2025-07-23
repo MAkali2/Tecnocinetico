@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#minecraft:is_overworld",
+  "features": "tecnocinetico:veta_de_plomo",
+  "step": "underground_ores"
+}
