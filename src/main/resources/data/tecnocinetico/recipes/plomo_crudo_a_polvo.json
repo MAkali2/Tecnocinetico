@@ -1,0 +1,12 @@
+{
+  "type": "tecnocinetico:pulverizando",
+  "ingredients": [
+    {
+      "item": "tecnocinetico:plomo_crudo"
+    }
+  ],
+  "output": {
+    "item": "tecnocinetico:polvo_de_plomo",
+    "count": 2
+  }
+}

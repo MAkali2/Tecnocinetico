@@ -1,5 +1,7 @@
-package com.bryan26.tecnocinetico; // Asegúrate de que este sea tu paquete
+// RUTA: src/main/java/com/bryan26/tecnocinetico/ModBlocks.java
+package com.bryan26.tecnocinetico;
 
+import com.bryan26.tecnocinetico.block.PrensaKineticaBlock; // Importa la nueva clase
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -23,9 +25,12 @@ public class ModBlocks {
     public static final RegistryObject<Block> MINERAL_DE_PLOMO_DEEPSLATE = registerBlock("mineral_de_plomo_deepslate",
             () -> new Block(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(4.5f)));
 
+    // --- ¡NUEVO BLOQUE DE MÁQUINA! ---
+    public static final RegistryObject<Block> PRENSA_KINETICA = registerBlock("prensa_kinetica",
+            () -> new PrensaKineticaBlock(BlockBehaviour.Properties.of().requiresCorrectToolForDrops().strength(3.5f).noOcclusion()));
+
 
     // --- MÉTODOS HELPER ---
-    // Este método registra un bloque y automáticamente crea su versión en ítem para el inventario.
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
