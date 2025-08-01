@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "tecnocinetico:block/prensa_electrica"
+  }
+}
